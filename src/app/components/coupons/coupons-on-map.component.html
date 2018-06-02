@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-12">
+
+        <!--<h3>Example 2 - distance between one origin and multiple target destinations</h3>-->
+
+        <div id="dvMap" style="min-height:500px"></div>
+
+        <div id="search" class="search">
+
+            <span>Destination:</span>
+
+            <input id="travelto" type="text" name="name" value="Tel Aviv-Yafo, Israel"/>
+
+            <button class="btn btn-primary btn-sm" (click)="PushDestination()">Add</button>
+
+            <span>Source:</span>
+
+            <input id="travelfrom" type="text" name="name" value="Ra'anana, Israel"/>
+
+            <input type="button" class="btn btn-default" value="Calculate" (click)="GetRoute()"/>
+
+            <table id="tblResults" cellpadding="10">
+                <tr>
+                    <th style="color: black;"> Start</th>
+                    <th style="color: black;"> End</th>
+                    <th style="color: black;"> Distance</th>
+                    <th style="color: black;"> Duration</th>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+
+    <h1>Miles to Kilometers</h1>
+
+    <div class="form-group margin-top">
+
+            <div class="col-sm-10">
+
+                <div class="form-group margin-top">
+                    <label class="col-sm-3 control-label margin-top">distance in Kilometers</label>
+
+                    <div class="col-sm-3 margin-top">
+                        <input type="number"
+                               class="form-control"
+                               placeholder="kilometers"
+                               (input)="convert('toMiles')"
+                               [(ngModel)]="distanceInKilometers"
+                               name="distanceInKilometers">
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="form-group margin-top">
+
+            <div class="col-sm-10">
+
+                <div class="form-group margin-top">
+                    <label class="col-sm-3 control-label margin-top">distance in Miles</label>
+
+                    <div class="col-sm-3 margin-top">
+                        <input type="number"
+                               class="form-control"
+                               placeholder="miles"
+                               (input)="convert('toKilometers')"
+                               [(ngModel)]="distanceInMiles"
+                               name="distanceInMiles">
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="form-group margin-top">
+
+        <div class="col-sm-10">
+            <img src="../assets/images/KilometersToMiles.png">
+        </div>
+
+        <div class="col-sm-10 margin-top">
+             <a routerLink="/converters">Back</a>
+        </div>
+    </div>
+
+</div>

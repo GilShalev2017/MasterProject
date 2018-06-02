@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Example 1 - simple distance between two points</h2>
+        <p>
+            This demonstrates getting and displaying the distance between two points
+        </p>
+
+        <div>
+            <div>
+                Travel From : <input id="travelfrom" type="text" name="name" value="Chichester, UK"/>
+                To : <input id="travelto" type="text" name="name" value="Goodwood aerodrone, UK"/>
+                <input type="button" value="Get Route" (click)="GetRoute()"/>
+
+            </div>
+            <br/>
+            <div>
+                <div id="dvDistance">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dvMap" style="min-height:500px"></div>
+
+    </div>
+</div>

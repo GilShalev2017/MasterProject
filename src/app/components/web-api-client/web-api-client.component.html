@@ -1,0 +1,73 @@
+<div class="container">
+
+    <div>
+        <h1>Web API Client - CRUD Operations</h1>
+        <h2>HTTP REST: Get, Post, Delete, Put</h2>
+    </div>
+
+    <table border="1px solid white">
+        <th>Product Id:</th>
+        <th>Product Name:</th>
+        <th>Product Category:</th>
+        <th>Product Price:</th>
+
+
+        <tr *ngFor="let product of products">
+            <td> <input type="text" class="crud_cell" [(ngModel)]="product.Id"/> </td>
+            <td> <input type="text" class="crud_cell" [(ngModel)]="product.Name"/> </td>
+            <td> <input type="text" class="crud_cell" [(ngModel)]="product.Category"/> </td>
+            <td> <input type="text" class="crud_cell" [(ngModel)]="product.Price"/> </td>
+            <td> <button class="btn btn-primary" (click)="deleteProduct(product)">Delete</button> </td>
+            <td> <button class="btn btn-primary" (click)="updateProduct(product)">Update</button> </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <div >
+
+        <button class="btn btn-primary buttons-margin" (click)="getAllProducts()">Get All Products</button>
+
+        <button class="btn btn-primary buttons-margin" data-toggle="modal" data-target="#myModal">Create New Product</button>
+
+        <button class="btn btn-primary buttons-margin" (click)="searchSpecificProduct()">Search</button>
+
+        <input type="text"
+               class="buttons-margin"
+               placeholder="Enter First Name:"
+               [(ngModel)]="searchText"
+               name="productName"/>
+
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content alert alert-warning">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">New Product:</h4>
+                </div>
+                <div class="modal-body form-group">
+                    <H2>Product Details</H2>
+                    <input type="text" placeholder="Product Name" [(ngModel)]="newProduct.Name"
+                           class="form-control col-sm-2">
+                    <input type="text" placeholder="Product Category" [(ngModel)]="newProduct.Category"
+                           class="form-control col-sm-2">
+                    <input type="text" placeholder="Product Price" [(ngModel)]="newProduct.Price"
+                           class="form-control col-sm-2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="createNewProduct()" data-dismiss="modal">
+                        Create
+                    </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

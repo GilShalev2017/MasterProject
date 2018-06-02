@@ -1,0 +1,68 @@
+{
+  "coupons": [
+                {
+                  "id": 1,
+                  "title": "ארוחת בוקר ועוד בקפה שפר",
+                  "location": "תל-אביב",
+                  "city": "תל-אביב",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/2816/101271_255_152.jpg?t=1490265841"
+                },
+                {
+                  "id": 2,
+                  "title": "טיפול במרכז הרופאים",
+                  "location": "תל-אביב",
+                  "city": "תל-אביב",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/735/1163_255_152.jpg?t=1487682062"
+                },
+                {
+                  "id": 3,
+                  "title": "מופעי סטנדאפ",
+                  "location": "tel-aviv",
+                  "city": "מספר מיקומים",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/2729/100933_255_152.jpg?t=1490176500"
+                },
+                {
+                  "id": 4,
+                  "title": "משתה גורמה תרומה לעמותת לשובע",
+                  "location": "tel-aviv",
+                  "city": "tel-aviv",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/2858/101714_255_152.jpg?t=1490524335"
+                },
+                {
+                  "id": 5,
+                  "title": "סדנת אוכל בפלורנטין",
+                  "location": "tel-aviv",
+                  "city": "tel-aviv",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/2073/4648_255_152.jpg?t=1488794364"
+                },
+                {
+                  "id": 6,
+                  "title": "שיעורי פילאטיס מכשירים",
+                  "location": "tel-aviv",
+                  "city": "tel-aviv",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/2717/100861_255_152.jpg?t=1490172604"
+                },
+                {
+                  "id": 7,
+                  "title": "אגנס פאב באבן גבירול",
+                  "location": "tel-aviv",
+                  "city": "tel-aviv",
+                  "original-price": "400",
+                  "discount-price": "300",
+                  "image": "https://media.grouponisrael.co.il/_media/media/1519/4489_255_152.jpg?t=1488706109"
+                }
+
+            ]
+}

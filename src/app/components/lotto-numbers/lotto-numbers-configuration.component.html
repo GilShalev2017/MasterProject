@@ -1,0 +1,82 @@
+<div class="container">
+
+    <header class="margin-top">
+        <H1>Lotto Numbers Settings</H1><br>
+     </header>
+
+    <div class="row margin-top">
+
+        <div class="col-sm-offset-1 col-sm-3">
+            <input type="number"
+                   min="1"
+                   max="100"
+                   class="form-control"
+                   placeholder="# numbers to generate"
+                   [(ngModel)]="numbersToGenerate"
+                   name="numbersToGenerate">
+        </div>
+
+    </div>
+
+    <div class="row margin-top">
+
+        <div class="col-sm-offset-1 col-sm-3">
+            <input type="number"
+                   min="1"
+                   max="100"
+                   class="form-control"
+                   placeholder="Min Range"
+                   [(ngModel)]="minRange"
+                   name="minRange">
+        </div>
+
+    </div>
+
+    <div class="row margin-top">
+
+        <div class="col-sm-offset-1 col-sm-3">
+            <input type="number"
+                   min="1"
+                   max="100"
+                   class="form-control"
+                   placeholder="Max Range"
+                   [(ngModel)]="maxRange"
+                   name="maxRange">
+        </div>
+
+    </div>
+
+    <div class="row margin-top">
+
+        <br>
+        <div class="col-sm-offset-1 col-sm-4">
+        <button class="btn btn-primary btn-sm buttons-margin" (click)="saveSettings()">
+
+                <i class="glyphicon glyphicon-save-file"></i>
+                Save Settings
+
+        </button>
+
+        <button class="btn btn-primary btn-sm buttons-margin" (click)="clearSettings()">
+
+            <i class="glyphicon glyphicon-trash"></i>
+            Clear Settings
+
+        </button>
+
+        <span id="helpBlock" class="col-sm-12">
+            <br><a routerLink="/lotto-numbers">go back</a>
+        </span>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <img class="lottery_balls_image" src="assets/images/lottery_balls-lg.jpg" alt="">
+
+        <!--<img  class="lottery_balls_image" src="assets/images/lottery.jpg" alt="">-->
+
+    </div>
+
+</div>

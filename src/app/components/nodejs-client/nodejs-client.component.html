@@ -1,0 +1,70 @@
+<div class="container">
+
+    <div>
+        <h1>NodeJS Client - CRUD Operations</h1>
+        <h2>HTTP REST: Get, Post, Delete, Put</h2>
+    </div>
+
+    <table border="1px solid white">
+        <th>First Name:</th>
+        <th>Last name:</th>
+        <th>Email Address:</th>
+
+        <tr *ngFor="let user of users">
+            <td> <input type="text" class="crud_cell" [(ngModel)]="user.first_name"/> </td>
+            <td> <input type="text" class="crud_cell" [(ngModel)]="user.last_name"/> </td>
+            <td> <input type="text" class="crud_cell" [(ngModel)]="user.email"/> </td>
+            <td> <button class="btn btn-primary" (click)="deleteUser(user)">Delete</button> </td>
+            <td> <button class="btn btn-primary" (click)="updateUser(user)">Update</button> </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <div >
+
+        <button class="btn btn-primary buttons-margin" (click)="getAllUsers()">Get All Users</button>
+
+        <button class="btn btn-primary buttons-margin" data-toggle="modal" data-target="#myModal">Create New User</button>
+
+        <button class="btn btn-primary buttons-margin" (click)="searchSpecificUser()">Search</button>
+
+        <input type="text"
+               class="buttons-margin"
+               placeholder="Enter First Name:"
+               [(ngModel)]="firstName"
+               name="firstName"/>
+
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content alert alert-warning">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">New User:</h4>
+                </div>
+                <div class="modal-body form-group">
+                    <H2>User Details</H2>
+                    <input type="text" placeholder="First Name" [(ngModel)]="newUser.first_name"
+                           class="form-control col-sm-2">
+                    <input type="text" placeholder="Last Name" [(ngModel)]="newUser.last_name"
+                           class="form-control col-sm-2">
+                    <input type="text" placeholder="Email Address" [(ngModel)]="newUser.email"
+                           class="form-control col-sm-2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="createNewUser()" data-dismiss="modal">
+                        Create
+                    </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

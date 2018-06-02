@@ -1,0 +1,27 @@
+<div class="system-health-view">
+
+    <!--<div class="row" *ngIf="locations">-->
+        <!--<div class="col-md-12 text-center text-big">-->
+            <!--{{locations.length}} Coworking Spaces-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="row top-space">-->
+    <div>
+        <sebm-google-map [latitude]="32.06628317" [longitude]="34.84434418"
+                         [zoom]="10"
+                         [streetViewControl]="true"
+                         [scrollwheel]="true">
+                         <!--[styles]="mapStyle">-->
+            <sebm-google-map-marker *ngFor="let location of locations"
+                                    [latitude]="location.latlng.lat"
+                                    [longitude]="location.latlng.lng"
+                                    [title]="location.name"
+                                    [iconUrl]="'/assets/images/map-marker.png'">
+
+            </sebm-google-map-marker>
+        </sebm-google-map>
+    </div>
+
+    <div id="dvMap"></div>
+</div>

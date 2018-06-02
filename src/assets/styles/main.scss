@@ -1,0 +1,324 @@
+$color-red: #ec2030;
+$color-blue: #5a93ba;
+$color-orange: #f68a22;
+$color-yellow: #faff2b;
+$color-green: #85bb41;
+
+@font-face {
+  font-family: 'Gisha';
+  src: url(../fonts/gisha.ttf);
+}
+
+.ckoo{
+
+}
+
+@font-face {
+  font-family: 'Gisha';
+  src: url(../fonts/gishabd.ttf);
+  font-weight: bold;
+}
+
+html, body {
+  font-family: Gisha, Arial;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.rating {
+  font-size: 1.3em;
+  padding-top: 7px;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.loading-small {
+  width: 50px;
+}
+
+.text-big {
+  font-size: 2em;
+}
+
+.text-medium {
+  font-size: 1.5em;
+}
+
+.top-space {
+  margin-top: 20px;
+}
+
+.row-spaced {
+  margin-top: 5px;
+}
+
+input.form-control, select.form-control {
+  color: #dfecf9;
+}
+
+input.ng-invalid {
+  border: 1px solid #DB524B;
+}
+
+.form-group .form-group .control-label {
+  color: #c8c5c5;
+}
+
+ul.list-no-style {
+  list-style: none;
+  padding: 0;
+}
+
+ul.float-list {
+  li {
+    float: left;
+  }
+}
+
+.brand-logo {
+  max-width: 200px;
+}
+
+.nav li a {
+  cursor: pointer;
+}
+
+.list-group {
+  .list-group-item {
+    background-color: #31343c;
+    border-color: #949ba2;
+  }
+}
+
+.navbar-default {
+  a.navbar-brand {
+    background-color: #565656;
+    padding-top: 15px;
+    padding-left: 30px;
+
+    &:hover {
+      background-color: #767676;
+    }
+
+    img {
+      width: 130px;
+    }
+  }
+
+  .navbar-right {
+    h4 {
+      color: #565656;
+      padding-right: 15px;
+      line-height: 40px;
+    }
+  }
+}
+
+.system-health {
+  &:hover {
+    background-color: rgba(68, 70, 79, 0.72);
+  }
+
+  .health-icon {
+    font-size: 4em;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+  }
+  .health-text {
+    font-size: 2em;
+  }
+}
+
+.system-health-view {
+  .server-buttons button {
+    width: 170px;
+    margin-bottom: 5px;
+  }
+}
+
+.add-image-button {
+  height: 100%;
+  width: 90px;
+  border: 1px solid rgba(68, 70, 79, 0.72);
+  color: #949ba2;
+  text-align: center;
+  font-size: 0.9em;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(68, 70, 79, 0.72);
+  }
+
+  i {
+    font-size: 1.5em;
+  }
+}
+
+.out-of-view {
+  position: fixed;
+  top: -100em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.is-preview {
+  border: 1.5px solid #f5ae3e;
+}
+
+.city-doesnt-exist {
+  border: 1.5px solid #DB524B;
+}
+
+.sebm-google-map-container {
+  height: 500px;
+}
+
+.view-header .header-title {
+  margin-left: 75px;
+}
+
+.level5, .level5 label {
+  color: aqua;
+}
+
+.level5-bg {
+  background-color: aqua;
+}
+
+.level4, .level4 label {
+  color: lime;
+}
+
+.level4-bg {
+  background-color: lime;
+}
+
+.level3, .level3 label {
+  color: pink;
+}
+
+.level3-bg {
+  background-color: pink;
+}
+
+.level2, .level2 label {
+  color: yellow;
+}
+
+.level2-bg {
+  background-color: yellow;
+}
+
+.level1, .level1 label {
+  color: #DB524B;
+}
+
+.level1-bg {
+  background-color: #DB524B;
+}
+
+.level0, .level0 label {
+  color: #DB524B;
+}
+
+.amenity-star {
+  border: 1px solid #949ba2;
+  border-radius: 3px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.reg-text {
+  font-size: 1em;
+  margin-top: -3px;
+  height: 21.3333px;
+}
+
+.fill-all {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #80878d;
+  &.no-underline {
+    text-decoration: none;
+  }
+}
+
+textarea.form-control.raw-data {
+  height: 300px;
+}
+
+.margin-left {
+  margin-left: 5px;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.minutesLabel, .hourLabel, .timeLabel {
+  color: #1d1f24;
+  font-weight: 600;
+}
+
+.on-going {
+  color: #f5ae3e;
+}
+
+.table-recommended {
+  tbody tr {
+    cursor: move;
+  }
+  td:first-child {
+    width: 20px;
+  }
+}
+
+.form-recommended {
+  .form-group {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .form-control {
+    color: #b9bec3;
+    width: 200px;
+  }
+
+  label {
+    margin-right: 5px;
+  }
+}
+
+.discount {
+  text-decoration: line-through;
+}
+
+button {
+  &.status-new {
+    background-color: $color-yellow;
+    color: black;
+  }
+  &.status-visited {
+    background-color: $color-blue;
+  }
+  &.status-not-interested {
+    background-color: $color-orange;
+    color: black;
+  }
+  &.status-signed-up {
+    background-color: $color-green;
+    color: black;
+  }
+}

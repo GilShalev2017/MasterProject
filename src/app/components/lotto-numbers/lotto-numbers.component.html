@@ -1,0 +1,43 @@
+ <div class="form-group container">
+
+    <div>
+        <H1>Lotto Numbers</H1><br>
+    </div>
+
+    <div class="row">
+
+        <button class="btn btn-primary btn-sm margin-left col-sm-1" name="generateButton" id='generateButton'
+                (click)="generateNumbers()">Generate</button>
+
+        <!--<ul name="options" class="col-sm-8">-->
+            <!--<span *ngFor="let item of randomNumbers">-->
+                <!--<span class="count">{{item}}</span>-->
+            <!--</span>-->
+        <!--</ul>-->
+
+    </div>
+
+    <div class="row">
+
+        <br>
+
+        <span id="helpBlock" class="help-block margin-left">
+             <a routerLink="/lotto-numbers-configuration">Configure the lottery</a>,
+            save it and come back here
+        </span>
+
+    </div>
+
+     <!--<div class="row">-->
+         <!--<img class="lottery_balls_image" src="assets/images/lottery_balls-lg.jpg" alt="">-->
+     <!--</div>-->
+
+    <div class="row" id="randomNumbersDisplay" class="randomNumbersDisplay">
+        <ul name="options">
+            <span *ngFor="let item of randomNumbers">
+                <span class="count">{{item}}</span>
+            </span>
+        </ul>
+    </div>
+
+ </div>

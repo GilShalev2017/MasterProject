@@ -1,0 +1,93 @@
+<div class="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo-text-only.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <h4>
+                            Administration Console
+                        </h4>
+                        <!--<img src="assets/images/LOGO-BAR.jpg" height="50px" width="80%">-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <!--<li class="nav-category">-->
+                <!--All Projects-->
+                <!--</li>-->
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/welcome">Main Page</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/quiz">JavaScript Quiz</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/lotto-numbers">Lotto Numbers</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/recommended-humus">Recommended Humus</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/coupons">Coupons</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/converters">Converters</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/address book">Address Book</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/personal-expenses-tracker">Personal Expenses Tracker</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/google-map">Google Map</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/nodejs-client">NodeJS Client</a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/web-api-client">ASP.NET Web API Client</a>
+                </li>
+                <li class="nav-info">
+                    <div class="m-t-xs">
+                        <img src="assets/images/logo.JPG" alt="">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section class="content">
+        <div style="{opacity:1}">
+            <div class="row">
+                <div class="col-xs-12">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+

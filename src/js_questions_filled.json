@@ -1,0 +1,234 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is correct about JavaScript?",
+      "answer": "4",
+      "choices": [
+        {
+          "id": 1,
+          "text": "JavaScript is a lightweight, interpreted programming language."
+        },
+        {
+          "id": 2,
+          "text": "JavaScript has object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages."
+        },
+        {
+          "id": 3,
+          "text": "The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers."
+        },
+        {
+          "id": 4,
+          "text": "All of the above."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How can you get the total number of arguments passed to a function?",
+      "answer": "2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Using args.length property"
+        },
+        {
+          "id": 2,
+          "text": "Using arguments.length property"
+        },
+        {
+          "id": 3,
+          "text": "Both of the above."
+        },
+        {
+          "id": 4,
+          "text": "None of the above."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which built-in method combines the text of two strings and returns a new string?",
+      "answer": "2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "append()"
+        },
+        {
+          "id": 2,
+          "text": "concat()"
+        },
+        {
+          "id": 3,
+          "text": "attach()"
+        },
+        {
+          "id": 4,
+          "text": "None of the above."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which of the following function of Number object forces a number to display in exponential notation?",
+      "answer": "1",
+      "choices": [
+        {
+          "id": 1,
+          "text": "toExponential()"
+        },
+        {
+          "id": 2,
+          "text": "toFixed()"
+        },
+        {
+          "id": 3,
+          "text": "toPrecision()"
+        },
+        {
+          "id": 4,
+          "text": "toLocaleString()"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which of the following function of Boolean object returns a string of either 'true' or 'false' depending upon the value of the object?",
+      "answer": "3",
+      "choices": [
+        {
+          "id": 1,
+          "text": "toSource()"
+        },
+        {
+          "id": 2,
+          "text": "valueOf()"
+        },
+        {
+          "id": 3,
+          "text": "oString()"
+        },
+        {
+          "id": 4,
+          "text": "None of the above."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which of the following function of String object returns the characters in a string beginning at the specified location through the specified number of characters?",
+      "answer": "3",
+      "choices": [
+        {
+          "id": 1,
+          "text": "slice()"
+        },
+        {
+          "id": 2,
+          "text": "split()"
+        },
+        {
+          "id": 3,
+          "text": "substr()"
+        },
+        {
+          "id": 4,
+          "text": "search()"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which of the following function of String object returns the calling string value converted to lower case?",
+      "answer": "2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "toLocaleLowerCase()"
+        },
+        {
+          "id": 2,
+          "text": "toLowerCase()"
+        },
+        {
+          "id": 3,
+          "text": "oString()"
+        },
+        {
+          "id": 4,
+          "text": "substring()"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following function of Array object returns a new array comprised of this array joined with other array(s) and/or value(s)?",
+      "answer": "1",
+      "choices": [
+        {
+          "id": 1,
+          "text": "concat()"
+        },
+        {
+          "id": 2,
+          "text": "pop()"
+        },
+        {
+          "id": 3,
+          "text": "push()"
+        },
+        {
+          "id": 4,
+          "text": "some()"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?",
+      "answer": "4",
+      "choices": [
+        {
+          "id": 1,
+          "text": "push()"
+        },
+        {
+          "id": 2,
+          "text": "join()"
+        },
+        {
+          "id": 3,
+          "text": "pop()"
+        },
+        {
+          "id": 4,
+          "text": "map()"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which of the following function of Array object removes the first element from an array and returns that element?",
+      "answer": "2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "reverse()"
+        },
+        {
+          "id": 2,
+          "text": "shift()"
+        },
+        {
+          "id": 3,
+          "text": "slice()"
+        },
+        {
+          "id": 4,
+          "text": "some()"
+        }
+      ]
+    }
+  ]
+}

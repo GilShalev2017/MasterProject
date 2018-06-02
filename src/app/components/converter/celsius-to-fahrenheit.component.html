@@ -1,0 +1,15 @@
+<div class="container">
+
+    <h1>Celsius to Fahrenheit</h1>
+
+    <p> Insert a number into one of the input fields below:</p>
+
+    <p><input id="celsius" [(ngModel)]="celsius" (input)="convert('C')"> degrees Celsius</p>
+
+    <p><input id="fahrenheit" [(ngModel)]="fahrenheit" (input)="convert('F')"> degrees Fahernheit</p>
+
+    <p><img src="../assets/images/centigrade-to-fahrenheit.png" ></p>
+
+    <a routerLink="/converters">Back</a>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+
+    <h1>Inch to Centimeters</h1>
+
+    <p>Insert a number into one of the input fields below:</p>
+
+    <p><input id="inches" [(ngModel)]="inches" (input)="convert('I')"> Inches</p>
+
+    <p><input id="centimeters" [(ngModel)]="centimeters" (input)="convert('C')"> Centimeters</p>
+
+    <p><img src="../assets/images/InchesToCm.png" width="30%" height="30%"></p>
+
+    <a routerLink="/converters">Back</a>
+</div>

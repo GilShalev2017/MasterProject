@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div>
+        <h1>Personal Expenses Tracker</h1>
+    </div>
+
+    <div class="row form-group margin-top">
+
+        <div class="col-sm-2 margin-top">
+           <input type="number"
+               class="form-control"
+               placeholder="Enter Sum:"
+               [(ngModel)]="sum"
+               name="sum"/>
+        </div>
+    </div>
+
+    <div class="row form-group margin-left margin-top">
+
+        <div margin-top>
+
+            <button class="btn btn-primary btn-sm" (click)="addItem('Transportation')">Transportation</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Clothes')">Clothes</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Health')">Health</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Education')">Education</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Housing')">Housing</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Other')">Other</button>
+            <button class="btn btn-primary btn-sm" (click)="addItem('Food')">Food</button>
+
+        </div>
+
+    </div>
+
+    <div class="row form-group margin-left margin-top">
+        <button class="btn btn-success btn-sm" (click)="cleanStorage()">Clear Storage</button>
+        <button class="btn btn-success btn-sm" (click)="deleteDatabase()">Delete Database</button>
+        <button class="btn btn-danger btn-sm" (click)="drawCostsChart()">Show Chart</button>
+    </div>
+
+    <div class="expenses-chart" id="piechart"></div>
+
+</div>

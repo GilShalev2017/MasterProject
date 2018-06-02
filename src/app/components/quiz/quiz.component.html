@@ -1,0 +1,68 @@
+<div class="container ">
+
+    <div class="quiz_title">
+        <h1>{{title}}</h1>
+    </div>
+
+    <form>
+
+    <div class="question">
+
+        <P>{{currentIndex+1}}). {{currentQuestion.question}}</P>
+
+        <ol name="options">
+            <li *ngFor="let item of currentQuestion.choices">
+                <!--<input type="radio" name="options" (click)="currentQuestion.userAnswer = item.text" [checked]="item.text === currentQuestion.userAnswer">-->
+                <div class="radio">
+                    <label class="radio-inline"><input type="radio"
+                                  name="options"
+                                  (click)="onRadioButtonClick(currentQuestion, item, $event)"
+                                  [checked]="item.id.toString() === currentQuestion.userAnswer">
+                        {{item.text}}<br>
+                    </label>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-sm" name="backButton" id='backButton' [disabled]="currentIndex===0" (click)="back()">Back</button>
+
+        <button class="btn btn-primary btn-sm" name="nextButton" id='nextButton' [disabled]="currentIndex===9" (click)="next()"
+                >Next</button>
+
+        <button class="btn btn-primary btn-sm" *ngIf="allQuestionsAnswered"
+                (click)="calculatScore()" data-toggle="modal" data-target="#myModal">Submit</button>
+
+    </div>
+
+    </form>
+
+    <div class="results" *ngIf="scoreCalculated">
+
+        <P>Your score is {{score}}</P>
+    </div>
+
+    <!-- Modal -->
+    <!--modal-sm"-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content alert alert-warning">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Score results:</h4>
+                </div>
+                <div class="modal-body">
+                    <H2>Your score is {{score}}</H2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
